@@ -1,0 +1,24 @@
+{% extends '@base/base.html.twig' %}
+
+{% block title %} Authors {% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row card-row">
+            {% for author in data['authors'] %}
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="{{ asset('img/artist.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ author.name }}</h5>
+                        <p class="card-text">{{ author.description }}</p>
+                        <a href="#" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="float-right">
+            <i class="fas fa-plus-circle fa-3x" data-toggle="modal" data-target="#exampleModal"></i>
+        </div>
+    </div>
+    {{ include('@author/author_modal.html.twig', {form: data['form']}) }}
+{% endblock %}

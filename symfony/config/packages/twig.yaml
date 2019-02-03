@@ -1,0 +1,10 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    paths:
+      '%kernel.project_dir%/templates/base': base
+      '%kernel.project_dir%/templates/index': index
+      '%kernel.project_dir%/templates/author': author
+    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
+

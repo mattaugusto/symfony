@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="symfony@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
+    <root id="1">
+      <ServerVersion>10.6</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="forum">
+      <ObjectId>16384</ObjectId>
+    </database>
+    <database id="3" parent="1" name="mcenter">
+      <ObjectId>16681</ObjectId>
+    </database>
+    <database id="4" parent="1" name="postgres">
+      <ObjectId>13055</ObjectId>
+      <Comment>default administrative connection database</Comment>
+    </database>
+    <database id="5" parent="1" name="symfony">
+      <ObjectId>16758</ObjectId>
+      <IntrospectionStateNumber>115</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <role id="6" parent="1" name="mcenter">
+      <ObjectId>16452</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="13" parent="5" name="information_schema">
+      <ObjectId>12764</ObjectId>
+    </schema>
+    <schema id="14" parent="5" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+    </schema>
+    <schema id="15" parent="5" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="16" parent="5" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+    </schema>
+    <schema id="17" parent="5" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="18" parent="5" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <IntrospectionTimestamp>2019-02-02.20:23:54.502</IntrospectionTimestamp>
+      <IntrospectionStateNumber>742</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="19" parent="5" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="5" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="5" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="5" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="5" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="5" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="25" parent="18" name="album_id_seq">
+      <ObjectId>16768</ObjectId>
+      <StateNumber>742</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="26" parent="18" name="author_id_seq">
+      <ObjectId>16766</ObjectId>
+      <StateNumber>742</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="27" parent="18" name="song_id_seq">
+      <ObjectId>16764</ObjectId>
+      <StateNumber>742</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="28" parent="18" name="album">
+      <ObjectId>16781</ObjectId>
+      <StateNumber>742</StateNumber>
+    </table>
+    <table id="29" parent="18" name="author">
+      <ObjectId>16776</ObjectId>
+      <StateNumber>742</StateNumber>
+    </table>
+    <table id="30" parent="18" name="migration_versions">
+      <ObjectId>16759</ObjectId>
+      <StateNumber>740</StateNumber>
+    </table>
+    <table id="31" parent="18" name="song">
+      <ObjectId>16770</ObjectId>
+      <StateNumber>742</StateNumber>
+    </table>
+    <column id="32" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="33" parent="28" name="author_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="34" parent="28" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>742</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="35" parent="28" name="album_pkey">
+      <ObjectId>16784</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="36" parent="28" name="idx_39986e43f675f31b">
+      <ObjectId>16786</ObjectId>
+      <ColNames>author_id</ColNames>
+    </index>
+    <key id="37" parent="28" name="album_pkey">
+      <ObjectId>16785</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>album_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="38" parent="28" name="fk_39986e43f675f31b">
+      <ObjectId>16792</ObjectId>
+      <ColNames>author_id</ColNames>
+      <RefTableId>16776</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>author</RefTableName>
+      <RefKeyName>author_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="39" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="40" parent="29" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>742</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="41" parent="29" name="author_pkey">
+      <ObjectId>16779</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="42" parent="29" name="author_pkey">
+      <ObjectId>16780</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>author_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="30" name="version">
+      <Position>1</Position>
+      <DataType>varchar(14)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>740</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="44" parent="30" name="executed_at">
+      <Position>2</Position>
+      <Comment>(DC2Type:datetime_immutable)</Comment>
+      <DataType>timestamp(0)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>740</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="45" parent="30" name="migration_versions_pkey">
+      <ObjectId>16762</ObjectId>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="30" name="migration_versions_pkey">
+      <ObjectId>16763</ObjectId>
+      <ColNames>version</ColNames>
+      <UnderlyingIndexName>migration_versions_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="48" parent="31" name="album_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>742</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="49" parent="31" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>742</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="50" parent="31" name="song_pkey">
+      <ObjectId>16773</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="51" parent="31" name="idx_33edeea11137abcf">
+      <ObjectId>16775</ObjectId>
+      <ColNames>album_id</ColNames>
+    </index>
+    <key id="52" parent="31" name="song_pkey">
+      <ObjectId>16774</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>song_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="53" parent="31" name="fk_33edeea11137abcf">
+      <ObjectId>16787</ObjectId>
+      <ColNames>album_id</ColNames>
+      <RefTableId>16781</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>album</RefTableName>
+      <RefKeyName>album_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
